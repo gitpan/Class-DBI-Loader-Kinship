@@ -1,0 +1,27 @@
+use Test::More qw( no_plan );
+
+my $a = eval 'require DBD::Pg' ;
+$a or die 'need DBD::Pg, not found';
+
+
+$ENV{ DBI_DSN  } =  'dbi:Pg:database=music',
+$ENV{ DBI_USER } =  'ioannis';
+
+my $b =  $ENV{ DBI_DSN  }  && $ENV{ DBI_USER } ; 
+$b  or die "must set DBI_DSN , DBI_USER, and perhaps DSI_PASS for testing";
+
+
+my $l = new Class::DBI::Loader::Kinship  (
+		dsn      =>  $ENV{ DBI_DSN  },
+		user     =>  $ENV{ DBI_USER },
+		password =>  $ENV{ DBI_PASS }, 
+		namespace => undef,
+);
+
+ok $l;
+my @tables = $l->tables;
+my @classes = $l->classes;
+ok @tables;
+ok @classes;
+
+
