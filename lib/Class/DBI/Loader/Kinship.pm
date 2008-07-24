@@ -2,7 +2,7 @@ package Class::DBI::Loader::Kinship;
 
 use 5.008008;
 use base 'Class::DBI::Loader';
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Class::DBI::Loader::k_Pg ;
 ## Class::DBI::Loader::k_Pg is masquerading as Class::DBI::Loader::Pg

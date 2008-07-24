@@ -1,7 +1,5 @@
 Build.PL
 Changes
-Debian_CPANTS.txt
-examples
 lib/Class/DBI/Loader/k_Pg.pm
 lib/Class/DBI/Loader/Kinship.pm
 Makefile.PL
@@ -9,7 +7,5 @@ MANIFEST			This list of files
 META.yml
 README
 t/00_load.t
-t/01_basic.t-
-t/02_music.t-
 t/pod-coverage.t
 t/pod.t

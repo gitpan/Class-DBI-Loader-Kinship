@@ -1,5 +1,8 @@
 Revision history for Perl extension Class::DBI::Loader::Kinship.
 
+0.03  Fri Jul 24 05:54:32 2008
+        - Added Class::DBI::Pg in prereq
+
 0.02  Wed Jul 23 21:48:23 2008
         - Fixed license entry (to perl)
 
