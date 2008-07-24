@@ -1,5 +1,7 @@
 Build.PL
 Changes
+Debian_CPANTS.txt
+examples
 lib/Class/DBI/Loader/k_Pg.pm
 lib/Class/DBI/Loader/Kinship.pm
 Makefile.PL

@@ -2,6 +2,7 @@ use 5.008008;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
+    LICENSE           => 'perl',
     NAME              => 'Class::DBI::Loader::Kinship',
     VERSION_FROM      => 'lib/Class/DBI/Loader/Kinship.pm',
     PREREQ_PM         => { Class::DBI::Loader => 0}, 

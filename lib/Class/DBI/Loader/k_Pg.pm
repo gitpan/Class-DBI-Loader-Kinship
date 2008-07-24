@@ -5,6 +5,7 @@ use base 'Class::DBI::Loader::Generic';
 use vars '$VERSION';
 use DBI;
 use Carp;
+use warnings;
 
 require Class::DBI::Pg;
 require Class::DBI::Loader::Generic;
